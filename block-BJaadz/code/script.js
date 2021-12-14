@@ -63,18 +63,18 @@ Do the following after selecting box 16 and storing in variable named box16
 
   - Focus on the difference between element and node
 */
-let box16 = document.getElementsByClassName('sixteen');
-console.log(box16.parentNode);
-console.log(box16.childNodes);
-console.log(box16.previousSibling);
-console.log(box16.nextSibling);
-console.log(box16.firstChild);
-console.log(box16.lastChild);
+// let box16 = document.getElementsByClassName('sixteen');
+// console.log(box16.parentNode);
+// console.log(box16.childNodes);
+// console.log(box16.previousSibling);
+// console.log(box16.nextSibling);
+// console.log(box16.firstChild);
+// console.log(box16.lastChild);
 
-console.log(box16.previousElementSibling);
-console.log(box16.nextElementSibling);
-console.log(box16.firstElementChild);
-console.log(box16.lastElementChild);
+// console.log(box16.previousElementSibling);
+// console.log(box16.nextElementSibling);
+// console.log(box16.firstElementChild);
+// console.log(box16.lastElementChild);
 // Select box 2 and append a new paragraph element with content "Append inserts as last child" just after hr element.
 let box2 = document.querySelector('.two');
 let p = document.createElement('p');
@@ -129,25 +129,33 @@ btn.style.padding = '0.5rem 1rem';
 let box9 = document.querySelector('.nine');
 box9.append(btn);
 // Create a img element with src value `https://images.unsplash.com/photo-1592500595497-d1f52a40b207?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80` and store in a variable named imgElm
-
+let imgelement = document.createElement('img');
+imgelement.src = `https://images.unsplash.com/photo-1592500595497-d1f52a40b207?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80`;
 // Select the box 7 using class seven
-
+let box7 = document.querySelector('.seven');
 // Remove all the elements form box seven
-
+box7.innerText = "";
 // Append the imgElm to the box no 7
-
+box7.append(imgelement);
 // Change the width and height of the image to `100%`
-
+imgelement.style.width = "100%"
+imgelement.style.height = "100%"
 // Select the box 5 using class five
-
+box5 = document.querySelector('.five');
 // Create an input element
+input = document.createElement("input");
 
 // Change the placeholder property of the input element to "Enter you email!"
-
+input.placeHolder = "Enter you email!";
 // Append the input element to the box 5 you selected above
-
+box5.append(input);
 // Create two anchor (a) element with  the text of `AltCampus` and `Google`
-
+let a1 = document.createElement("a");
+a1.innerText = "AltCampus"; 
 // Change the href property of the anchor elements to `https://altcampus.school` and `https://google.com`
 
+a1.href = `https://altcampus.school`;
+
+a2.href = `https://google.com`;
 // Append both the elements to box 5 you selected above.
+box5.append(a1,a2);
