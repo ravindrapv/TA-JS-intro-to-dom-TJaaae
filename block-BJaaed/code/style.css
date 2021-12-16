@@ -58,6 +58,7 @@ body{
     font-size: 1rem;
     line-height: 1.6;
     background-color: #FDF5E8;
+    font-family: sans-serif;
 }
 
 header{
@@ -68,6 +69,13 @@ header{
     text-align: center;
     text-transform: uppercase;
     height: 5rem;
+}
+h2,
+li,
+p{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
 }
 
 .container{
@@ -95,6 +103,7 @@ header{
     margin: 0 auto;
     border: none;
     border-radius: 5px;
+    margin: 0 auto;
 }
 .flex{
     display: flex;
